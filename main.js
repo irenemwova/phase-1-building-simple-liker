@@ -3,6 +3,21 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+document.addEventListener("DOMContentLoaded", () => {
+  const errorModal = document.querySelector("#modal");
+  const likeButtons = document.querySelectorAll(".like-glyph");
+
+  // Ensure the modal element exists
+  if (!errorModal) {
+      console.error("Modal element not found!");
+      return;
+  }
+
+  // Ensure the modal is hidden initially
+  errorModal.classList.add("hidden");
+
+  // Rest of the code remains the same...
+});
 
 
 
